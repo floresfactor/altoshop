@@ -1,4 +1,4 @@
-### Aplicacion de tienda
+### Aplicacion de Tienda en Linea
 #### Aplicaciones web multicapa - José Ignacio Flores Belmares - 235743
 
 
