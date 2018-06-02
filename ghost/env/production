@@ -1,0 +1,7 @@
+url=http://www.kopay.com.mx/blog
+mail__transport=SMTP
+mail__options__service=gmail
+mail__options__host=smtp.gmail.com
+mail__options__port=465
+mail__options__auth__user=soporte@kopay.com.mx
+mail__options__auth__pass=BlackmirroR

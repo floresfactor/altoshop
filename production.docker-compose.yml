@@ -1,0 +1,73 @@
+version: '2'
+
+services:
+  kopay_server:
+    container_name: kopay_server
+    build: 
+      context: ./server
+      dockerfile: production.dockerfile
+    env_file: ./server/env/production
+    ports:
+     - 3005:3005
+    expose: 
+     - 3005
+    links:
+     - "mongodb:mongodb"
+    volumes:
+     - "./server:/app"
+    working_dir: /app
+    depends_on:
+     - mongodb
+    networks:
+     - kopay_nw
+  
+  ghost:
+    image: ghost:1-alpine
+    container_name: ghost
+    env_file: ./ghost/env/production
+    volumes:
+      - ./ghost:/var/lib/ghost/content
+    ports:
+      - 127.0.0.1:2368:2368
+    expose:
+      - 2368
+    networks: 
+      - kopay_nw
+      
+  kopay_client:
+    container_name: kopay_client
+    build: 
+      context: ./client
+      dockerfile: production.dockerfile
+    env_file: ./client/env/production
+    volumes:
+     - "./client:/app"
+    expose:
+     - 3000
+    working_dir: /app
+    depends_on:
+     - kopay_server
+     - ghost
+    networks:
+     - kopay_nw
+      
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    build: 
+      context: .
+      dockerfile: ./mongo/production.dockerfile
+    ports:
+     - 127.0.0.1:27017:27017
+    expose:
+     - 27017
+    volumes:
+     - "/usr/local/mongodb/production/db:/data/db"
+     - "/usr/local/mongodb/production/backup:/data/backup"
+    env_file: ./mongo/env/production
+    networks:
+     - kopay_nw
+
+networks:
+  kopay_nw:
+    driver: bridge

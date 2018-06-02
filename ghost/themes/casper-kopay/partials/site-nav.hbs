@@ -1,0 +1,69 @@
+<nav class="site-nav">
+    <div class="site-nav-left">
+       <!-- {{#if @blog.logo}}
+            <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{else}}
+            <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+        {{/if}} -->
+        <a class="site-nav-logo" href="/"><img src="{{asset "kopayshop.png"}}" alt="{{@blog.title}}" /></a>
+        <ul class="nav" role="menu">
+            <li class="nav-inicio" role="menuitem"><a href="/">INICIO</a></li>
+            <li class="nav-nosotros" role="menuitem"><a href="/nosotros">NOSOTROS</a></li>
+            <li class="nav-servicios" role="menuitem"><a href="/servicios">SERVICIOS</a></li>
+            <li class="nav-suscursales" role="menuitem"><a href="/suscursales/">SUSCURSALES</a></li>
+            <li class="nav-tienda" role="menuitem"><a href="/shop/">TIENDA</a></li>
+            <li class="nav-blog" role="menuitem"><a href="/blog">BLOG</a></li>
+            <li class="nav-contacto" role="menuitem"><a href="/contacto">CONTACTO</a></li>
+        </ul>
+    </div>
+    <div class="site-nav-right">
+        <div id="nav-dropdown" class="show-on-sm pull-right">
+            <i class="anticon icon-bars"></i>
+        </div>
+        <ul class="nav hide-on-sm" role="menu">
+            <li class="nav-inicio" role="menuitem">
+                <a href="/account/login">
+                    <i class="anticon icon-adduser"></i>
+                    <div class="no-display-on-lg">INGRESA</div> 
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+<!-- display is set by jQuery -->
+<div class="dropdown-content" >
+    <ul class="nav-dropdown" role="menu">
+        <li class="nav-inicio" role="menuitem"><a href="/">INICIO</a></li>
+        <li class="nav-nosotros" role="menuitem"><a href="</nosotros">NOSOTROS</a></li>
+        <li class="nav-servicios" role="menuitem">
+            <div class="nav-servicios-inner">
+                SERVICIOS
+            </div>
+            <div class="dropdown-servicios">
+                <ul>
+                    <li><a href="/servicios#depilacion">DEPILACION</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/servicios#antiedad">ANTIEDAD</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/servicios#varices">ELIMINACIÓN DE VÁRICES Y VENAS FACIALES</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/servicios#endermologie">ENDERMOLOGIE</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/servicios#therma">THERMASHAPE</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/servicios#velashape">VELASHAPE</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-suscursales" role="menuitem"><a href="/suscursales/">SUSCURSALES</a></li>
+        <li class="nav-tienda" role="menuitem"><a href="/shop/">TIENDA</a></li>
+        <li class="nav-blog active" role="menuitem"><a href="/">BLOG</a></li>
+        <li class="nav-contacto" role="menuitem"><a href="/contacto">CONTACTO</a></li>
+    </ul>
+</div>

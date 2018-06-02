@@ -1,0 +1,18 @@
+[
+  {
+    "id": "Header.greeting",
+    "defaultMessage": "Welcome to your dashboard, {name}!"
+  },
+  {
+    "id": "Header.greeting2",
+    "defaultMessage": "Welcome to your dashboard2, {name}!"
+  },
+  {
+    "id": "Header.greeting3",
+    "defaultMessage": "Welcome to your dashboard3, {name}!"
+  },
+  {
+    "id": "Header.greeting4",
+    "defaultMessage": "yo yo yo yo yo, {name}!"
+  }
+]

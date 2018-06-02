@@ -1,0 +1,9 @@
+{
+  "en": {
+    "Header.greeting": "Welcome to your dashboard, {name}!",
+    "Header.greeting2": "Welcome to your dashboard2, {name}!",
+    "Header.greeting3": "Welcome to your dashboard3, {name}!",
+    "Header.greeting4": "yo yo yo yo yo, {name}!"
+  },
+  "es": {}
+}

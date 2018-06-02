@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="format-detection" content="telephone=no" />
+    <title>Notify-Final</title>
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!--<![endif]-->
+    <style type="text/css">
+        .main-container {
+            width: 500px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .kopay-logo {
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .payment-info {
+            background-color: #f6f5f5;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .payment-info-table {
+            width: 400px;
+            margin: 0 auto 35px;
+            text-align: center;
+        }
+
+        .payment-title {
+            text-align: center;
+        }
+
+        .oxxo-logo {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .oxxo-logo img {
+            width: 200px;
+        }
+
+        .my-account {
+            padding-top: 15px;
+            padding-bottom: 35px;
+            margin: auto;
+        }
+
+        .my-account-anchor {
+            background-color: #ff7101;
+            color: white;
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            max-width: 120px;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        .remaining-payment-notice {
+            text-align: justify;
+            font-size: 12px;
+            width: 400px;
+            padding-bottom: 15px;
+            margin: auto;
+        }
+
+        .copyrigth {
+            width: 300px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #444444;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="payment-info">
+            <div class="kopay-logo">
+                <img src="http://www.wmu.mx/images/kopay.png" alt="Kopay">
+            </div>
+            <h2 class="payment-title">Tu pago ha sido recibido!</h2>
+            <div style="text-align: center;">
+                <b>por medio de</b>
+            </div>
+            <div class="oxxo-logo">
+                <img src="http://www.kopay.com.mx/public/img/oxxopay_brand.png" alt="Oxxo">
+            </div>
+            <table class="payment-info-table">
+                <tbody>
+                    <tr>
+                        <td class="rigth">
+                            <b>Cantidad:</b>
+                        </td>
+                        <td>
+                            $ {{amount}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Fecha:</b>
+                        </td>
+                        <td>
+                            {{date}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>ID:</b>
+                        </td>
+                        <td>
+                            <div>
+                                {{id_pago}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            {{#if partialPayment}}
+            <div class="remaining-payment-notice">
+                Para recibir su tratamiento es necesario presentar este comprobante de pago o número de orden, así como realizar el pago
+                del 50% de su saldo pendiente en sucursal. Nos pondremos en contacto con usted para confirmar su cita. Consulte
+                las indicaciones en el correo que enviamos contiguo a este para recibir su tratamiento.
+            </div>
+            {{/if}}
+            <table class="my-account">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a class="my-account-anchor" href="http://www.kopay.com.mx/account/my-account/orders" target="_blank" object="link-editable">
+                                Ir a mi cuenta
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="copyrigth">
+            &copy; 2017 Operadora de Franquicias Kopay S.A. de C.V. Todos los derechos Reservados.
+        </div>
+    </div>
+</body>
+
+</html>

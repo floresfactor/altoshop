@@ -1,0 +1,45 @@
+<tr width="100%">
+	<td width="100%" style="background-color: #fff;">
+		<table width="100%" style="background-color: #fff;">
+			<caption style="color: #1f2140; text-align: left; font-size: 16px; font-family: sans-serif;">
+				<div style="padding: 20px;">
+					{{body.caption}}
+				</div>
+			</caption>
+			<tbody>
+				{{#each body.talks}}
+					<tr>
+						<td>
+							<table width="100%">
+								<tr>
+									<td width="40px">
+										<div style="padding: 20px;">
+											<img src="{{imageUrl}}" alt="imageAlt" alt="{{author}}" style="font-family: sans-serif; width:60px; height:60px;"/>
+										</div>
+									</td>
+									<td width="80%">
+										<div>
+											<h2 style="font-family: sans-serif; font-size: 24px; margin-bottom: 0; color: #ed4e51;">{{title}}</h2>
+										</div>
+										<div>
+												<p style="font-family: sans-serif; font-size: 13px; color: #1f2140;">
+													By {{author}}
+												</p>
+										</div>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					{{#unless @last}}
+					<tr>
+						<td width="100%">
+							<div style="width: 100%; height: 1px; background-color: #e7e7e7;">
+							</div>
+						</td>
+					</tr>
+					{{/unless}}
+				{{/each}}
+			</tbody>
+		</table>
+	</td>
+</tr>

@@ -1,0 +1,5 @@
+NODE_ENV=production
+port=3000
+PORT=3000
+CLIENT_ID=ghost-frontend
+CLIENT_SECRET=31d84840959f

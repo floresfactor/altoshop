@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="format-detection" content="telephone=no" />
+    <title>Notify-Final</title>
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!--<![endif]-->
+    <style type="text/css">
+        .main-container {
+            width: 650px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .kopay-logo {
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .payment-info {
+            background-color: #f6f5f5;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .payment-info-table {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 35px;
+        }
+
+        .payment-title {
+            text-align: center;
+        }
+
+        .oxxo-logo {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .oxxo-logo img {
+            width: 200px;
+        }
+
+        .my-account {
+            padding-top: 15px;
+            padding-bottom: 35px;
+            margin: auto;
+        }
+
+        .my-account-anchor {
+            background-color: #ff7101;
+            color: white;
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            max-width: 120px;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        .remaining-payment-notice {
+            text-align: justify;
+            font-size: 12px;
+            width: 400px;
+            padding-bottom: 15px;
+            margin: auto;
+        }
+
+        .copyrigth {
+            width: 300px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #444444;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="payment-info">
+            <div class="kopay-logo">
+                <img src="http://www.wmu.mx/images/kopay.png" alt="Kopay">
+            </div>
+            <h2 class="payment-title">Pago efectuado en oxxo de {{customer.firstName}}!</h2>
+            <div class="oxxo-logo">
+                <img src="http://www.kopay.com.mx/public/img/oxxopay_brand.png" alt="Oxxo">
+            </div>
+            <table width="250" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
+                <tr>
+                    <td align="center" width="250" valign="middle" class="em_pad">
+
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                            class="fullCenter">
+                            <tr>
+                                <td width="100%" align="center" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                                    <strong>Cliente:</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" align="center" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                                    <strong>id</strong>: {{customer._id}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" align="center" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                                    <strong>Nombre</strong>: {{customer.firstName}} {{customer.lastName}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" align="center" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                                    <span style="color:#2a2d32;">
+                                        <strong>Correo</strong>: {{customer.email}}
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" border="0" height="50" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                class="fullCenter">
+                <tr>
+                    <td align="center" valign="middle">
+                        <table height="50" border="0" cellpadding="0" cellspacing="0" align="left">
+                            <tr>
+                                <td align="center" valign="middle" width="35">
+                                    <i class="fa fa-handshake-o" style="color:#ff6a02" aria-hidden="true" align="left"></i>
+                                </td>                             
+                                <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                    <strong>sucursal</strong>: {{shipment.branch.name}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="center" width="1" height="50" bgcolor="e9ebf4" style="font-size:14px; color:#23aedd; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                        <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                    </td>
+                    <td align="center" valign="middle">
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" height="50">
+                            <tr>
+                                <td align="center" valign="middle" width="50" style="line-height:45px;">
+                                    <i class="fa fa-usd" aria-hidden="true" style="color:#ff6a02" align="left"></i>
+                                </td>
+                                <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                    <strong>Total</strong>: ${{total}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="1" bgcolor="#e9ebf4">
+                        <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                    </td>
+                </tr>
+            </table>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+
+                </tr>
+            </table>
+            <table width="100%" border="0" height="50" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                class="fullCenter">
+                <tr>
+                    <td align="center" valign="middle">
+                        <table height="50" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                                <td align="center" valign="middle" width="25">
+                                    <i class="fa fa-handshake-o" style="color:#ff6a02" aria-hidden="true" align="left"></i>
+                                </td>
+                                <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                    <strong>Tipo de pago</strong>: {{payments.0.type}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="center" width="1" height="50" bgcolor="e9ebf4" style="font-size:14px; color:#23aedd; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                        <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                    </td>
+                    <td align="center" valign="middle">
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" height="50">
+                            <tr>
+                                <td align="center" valign="middle" width="50" style="line-height:45px;">
+                                    <i class="fa fa-clock-o" aria-hidden="true" style="color:#ff6a02" align="left"></i>
+                                </td>
+                                <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                    <strong>Fecha de la cita</strong>: {{formatedDate}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="1" bgcolor="#e9ebf4">
+                        <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                    </td>
+                </tr>
+            </table>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="20" class="em_h30">
+                        <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                    </td>
+                </tr>
+            </table>
+            <table class="payment-info-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>
+                                Pago:
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <b>Cantidad: ${{amount}} </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Fecha:</b>
+                            {{date}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>ID: </b>
+                            {{id_pago}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="copyrigth">
+            &copy; 2017 Operadora de Franquicias Kopay S.A. de C.V. Todos los derechos Reservados.
+        </div>
+    </div>
+</body>
+
+</html>

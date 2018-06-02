@@ -1,0 +1,7 @@
+NODE_ENV=staging
+port=4005
+PORT=4005
+HOST_IP=192.155.83.75
+HTTPS=false
+APP_DB_USER=appUsr
+APP_DB_PASS=totoGarigol

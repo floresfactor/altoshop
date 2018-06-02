@@ -1,0 +1,5 @@
+NODE_ENV=staging
+port=4000
+PORT=4000
+CLIENT_ID=ghost-frontend
+CLIENT_SECRET=31d84840959f

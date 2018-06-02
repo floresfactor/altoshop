@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="format-detection" content="telephone=no" />
+    <title>Notify-Final</title>
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!--<![endif]-->
+    <style type="text/css">
+        .kopay-main-container {
+            width: 500px;
+            padding: 35px;
+            margin: auto;
+
+            background-color: #f6f5f5;
+
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        img {
+            max-width: 250px;
+        }
+
+        p {
+            max-width: 450px;
+            text-align: left;
+            text-align: justify;
+            line-height: 200%;
+        }
+
+        a {
+            background-color: #F38708;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-weight: 600;
+        }
+
+        .account-anchor {
+            margin-top: 35px;
+        }
+
+        .firm img {
+            max-height: 60px;
+        }
+
+        .greetings {
+            font-size: 16px;
+        }
+
+        .logo,
+        .account-anchor,
+        .firm {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kopay-main-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="logo">
+                        <img src="http://www.kopay.com.mx/public/img/kopayshop.png" alt="Kopay">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{#if subscription.customerFirstName}}
+                        <b class="greetings">Hola {{subscription.customerFirstName}},</b>
+                        {{else}}
+                        <b class="greetings">Hola,</b>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Te damos la más cordial bienvenida a nuestra comunidad en línea, a partir de ahora estarás recibiendo información importante
+                            y todas nuestras promociones y precios especiales antes que nadie, con la facilidad de hacer
+                            tus sus compras de manera cómoda y segura. En Kopay realizamos tratamientos de belleza y depilación
+                            láser, contamos con el equipo más vanguardista y efectivo así como terapeutas certificadas y
+                            altos estándares de calidad. Bienvenido y gracias por su decisión de convertirse en uno más de
+                            los miles de clientes satisfechos que hoy en día hacen de Kopay la franquicia con mayor experiencia
+                            en depilación láser.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="firm">
+                        Atentamente
+                        <br>
+                        <img src="http://www.kopay.com.mx/public/img/gele-sign.png" alt="">
+                        <br/> Ángeles Giner
+                        <br>
+                        <b>Directora General</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="account-anchor">
+                        <a href="http://www.kopay.com.mx/account/my-account" target="_blank">Ir a mi cuenta</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

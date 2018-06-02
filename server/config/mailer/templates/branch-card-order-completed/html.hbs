@@ -1,0 +1,402 @@
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+</head>
+<!-- Notify 10-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module">
+  <tr mc:repeatable>
+    <td bgcolor="#f6f5f5" align="center">
+      <!-- Mobile Wrapper -->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+        <tr>
+          <td width="100%" align="center">
+
+            <div class="sortable_inner">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                <tr>
+                  <td height="60" class="em_h1">
+                    <img src="images/spacer.gif" height="1" width="100%" style="max-height:1px; min-height:1px; display:block; width:100%; min-width:280px;"
+                      border="0" />
+                  </td>
+                </tr>
+              </table>
+
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
+                <tr>
+                  <td align="center" width="100%" valign="middle" height="51">
+
+                    <img src="http://www.wmu.mx/images/kopay.png" alt="logo" height="51" style="height:51px;" />
+                  </td>
+                </tr>
+              </table>
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                <tr>
+                  <td height="40" class="em_h40">
+                    <img src="images/spacer.gif" height="1" width="100%" style="max-height:1px; min-height:1px; display:block; width:100%; min-width:280px;"
+                      border="0" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full" style="max-width:400px!important;">
+        <tr>
+
+          <td align="center" width="100%" valign="middle" class="em_pad">
+
+            <table width="650" border="0" cellpadding="0" cellspacing="0" align="center" class="full" style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+              <tr>
+                <td align="center" width="100%" valign="middle" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;">
+
+                  <div class="sortable_inner">
+
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td height="35" class="em_h30">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td valign="top" align="center">
+                          <td width="100%" align="center" style="font-size:26px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:700;">Orden: {{order._id}}</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="22" class="em_h20">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="em_wrapper" object="drag-module-small">
+                      <tr>
+                        <td align="center" width="100%" valign="middle">
+
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                            class="fullCenter">
+                            <tr>
+                              <td width="100%" align="center" style="font-size:26px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:700;">Nombre: {{customer.firstName}} {{customer.lastName}} </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td height="10">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table width="250" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
+                      <tr>
+                        <td align="center" width="250" valign="middle" class="em_pad">
+
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                            class="fullCenter">
+                            <tr>
+                              <td width="100%" align="center" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                                <strong>id</strong>: {{customer._id}} &nbsp; &nbsp;
+                                <span style="color:#e9ebf4;"> | </span> &nbsp; &nbsp;
+                                <span style="color:#2a2d32;">
+                                  <strong>correo</strong>: {{customer.email}}</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- principio tabla-->
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td height="35" class="em_h30">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="1" bgcolor="#e9ebf4">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" height="50" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                      class="fullCenter">
+                      <tr>
+                        <td align="center" valign="middle">
+                          <table height="50" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td align="center" valign="middle" width="25">
+                                <i class="fa fa-map-marker" style="color:#ff6a02" aria-hidden="true" align="left"></i>
+                              </td>
+                              <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                <strong>sucursal</strong>: {{shipment.branch.name}}
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" width="1" height="50" bgcolor="e9ebf4" style="font-size:14px; color:#23aedd; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                        <td align="center" valign="middle">
+
+                          <table border="0" cellpadding="0" cellspacing="0" align="center" height="50">
+                            <tr>
+                              <td align="center" valign="middle" width="50" style="line-height:45px;">
+                                <i class="fa fa-usd" aria-hidden="true" style="color:#ff6a02" align="left"></i>
+                              </td>
+                              <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                <strong>Total</strong>: ${{total}}
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="1" bgcolor="#e9ebf4">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" height="50" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                      class="fullCenter">
+                      <tr>
+                        <td align="center" valign="middle">
+                          <table height="50" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td align="center" valign="middle" width="25">
+                                <i class="fa fa-handshake-o" style="color:#ff6a02" aria-hidden="true" align="left"></i>
+                              </td>
+                              <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                <strong>Tipo de pago</strong>: {{payments.0.type}}
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" width="1" height="50" bgcolor="e9ebf4" style="font-size:14px; color:#23aedd; font-family:'Lato',Arial, sans-serif; font-weight:400; line-height:22px;">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                        <td align="center" valign="middle">
+
+                          <table border="0" cellpadding="0" cellspacing="0" align="center" height="50">
+                            <tr>
+                              <td align="center" valign="middle" width="50" style="line-height:45px;">
+                                <i class="fa fa-clock-o" aria-hidden="true" style="color:#ff6a02" align="left"></i>
+                              </td>
+                              <td align="left" valign="middle" style="font-size:14px; color:#2a2d32; font-family:'Lato',Arial, sans-serif; font-weight:400; ">
+                                <strong>Fecha de la cita</strong>: {{formatedDate}}
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="1" bgcolor="#e9ebf4">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" class="em_h30">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- fin tabala-->
+
+
+
+                    <table width="300" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
+                      <tr>
+                        <td valign="top" class="em_pad2">
+                          <table align="center" width="500" border="0" cellspacing="0" cellpadding="0" class="full">
+                            <tr>
+                              <td valign="middle" align="left" width="63%" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                Paquete/producto
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                Precio
+                              </td>
+                              {{#if totalPending}}
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                Pago
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                Pendiente
+                              </td>
+                              {{/if}}
+                            </tr>
+                            <tr>
+                              <td height="15" bgcolor="#fafafa">
+                                <img src="http://www.wmu.mx/images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                              </td>
+                            </tr>
+                            {{#each items as | item |}}
+                            <tr>
+                              <td valign="middle" align="left" width="63%" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                <span style="font-size:15px; color:#ff7101; font-family:'Lato',Arial, sans-serif; font-weight:700;">{{item.parent.parent.name}} ({{this.itemDetails.name}})</span>
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#725858; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                <span style="font-size:15px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:700;"> ${{item.price}}</span>
+                              </td>
+                              {{#if ../totalPending}}
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                <span style="font-size:15px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:700;"> ${{item.firstPaymentAmount}}</span>
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                <span style="font-size:15px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:700;"> ${{item.pending}}</span>
+                              </td>
+                              {{/if}}
+                            </tr>
+                            <tr>
+                              <td height="15" bgcolor="#fafafa">
+                                <img src="http://www.wmu.mx/images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                              </td>
+                            </tr>
+                            {{/each}}
+                            <tr>
+                              <td valign="middle" align="left" width="63%" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                Total
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                ${{total}}
+                              </td>
+                              {{#if totalPending}}
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                ${{totalFirstPayment}}
+                              </td>
+                              <td width="25%" align="left" style="font-size:13px; color:#aaaaaa; font-family:'Lato',Arial, sans-serif; font-weight:400;">
+                                ${{totalPending}}
+                              </td>
+                              {{/if}}
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                      class="fullCenter">
+                      <tr>
+                        <td width="100%" height="30" class="em_h30">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Centered Button -->
+
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="myfull" object="drag-module-small">
+                      <tr>
+                        <td width="100%" align="center">
+                          <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                            class="mcenter">
+                            <tr>
+                              <td width="100%" align="center">
+                                <!-- SORTABLE -->
+
+                                <div class="sortable_inner">
+                                  <table border="0" cellpadding="0" cellspacing="0" align="center" class="mcenter">
+                                    <tr>
+                                      <td align="center" valign="middle" height="36" style="font-family:'Open Sans', Arial, sans-serif; font-size:11px; color:#444444; text-transform:uppercase;   padding-left:17px; padding-right:17px;   font-weight:300; border-radius:5px;">
+                                        <a href="#" target="_blank" style="text-decoration:none; color:#000000; line-height:36px; display:block;">Orden creada: {{formatedCreatedAt}} Hora Local de Chihuahua.</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- End Button -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                      class="fullCenter">
+                      <tr>
+                        <td width="100%" height="35" class="em_h30">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+
+                </td>
+              </tr>
+            </table>
+
+          </td>
+
+        </tr>
+      </table>
+      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+        <tr>
+          <td height="40" class="em_h40">
+            <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+          </td>
+        </tr>
+      </table>
+
+
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" object="drag-module">
+        <tr mc:repetable>
+          <td align="center" valign="top">
+            <!-- SORTABLE -->
+
+            <table align="center" class="full" width="400" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+              <tr>
+                <td>
+                  <div class="sortable_inner">
+
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td valign="top" align="center" style="font-family:'Lato', Arial, sans-serif; font-weight:400; font-size:11px; color:#000000; line-height:22px;">
+                          &copy; 2017 Operadora de Franquicias Kopay S.A. de C.V. Todos los derechos Reservados.
+                        </td>
+                      </tr>
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+
+                    </table>
+                    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+                      <tr>
+                        <td height="73" class="em_h1">
+                          <img src="images/spacer.gif" width="1" alt="" height="1" border="0" style="display:block;" />
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- End of Notify 10-->

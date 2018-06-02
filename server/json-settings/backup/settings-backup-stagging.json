@@ -1,0 +1,106 @@
+{
+    "PROJECT_DIR": {
+        "public": false
+    },
+    "APP_PORT": {
+        "public": false,
+        "readonly": true
+    },
+    "SERVER_ADDRESS": {
+        "public": false
+    },
+    "MONGO_DB_CONNECTION": {
+        "public": false
+    },
+    "ALLOWED_CORS_ORIGINS": {
+        "public": false
+    },
+    "STATICS_FOLDER": {
+        "value": "/public",
+        "public": true,
+        "readonly": true
+    },
+    "ADMIN_IMAGES_FOLDER_NAME": {
+        "value": "/img",
+        "public": true,
+        "readonly": true
+    },
+    "DATE_LOCALE": {
+        "value": "es-MX",
+        "values": [
+            "es-MX",
+            "en-US"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "DATETIME_FORMAT": {
+        "public": true
+    },
+    "LANGUAGE": {
+        "value": "es",
+        "values": [
+            "es",
+            "en"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "CONEKTA_API_KEY": {
+        "value": "key_uY1dAHChx1qsVpNrx9zysQ",
+        "public": true,
+        "readonly": false
+    },
+    "CURRENCY": {
+        "value": "MXN",
+        "values": [
+            "MXN"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_HOST": {
+        "value": "smtp.gmail.comadre",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_PORT": {
+        "value": "465",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_SECURE": {
+        "value": true,
+        "values": [
+            true,
+            false
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_AUTH_USER": {
+        "value": "soporte@kopay.com.mx",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_AUTH_PASS": {
+        "value": "BlackmirroR",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_TO": {
+        "value": "support@kopay.com.mx",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_SUBJECT": {
+        "value": "password reset default",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_TEXT": {
+        "value": "default message",
+        "public": true,
+        "readonly": false
+    }
+}

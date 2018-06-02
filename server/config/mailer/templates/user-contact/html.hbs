@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!--[if !mso]><!-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta name="format-detection" content="telephone=no" />
+	<title>Notify-Final</title>
+	<!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<!--<![endif]-->
+	<style type="text/css">
+		.main-container {
+			width: 500px;
+			background-color: #f6f5f5;
+			margin: 35px auto;
+			padding: 35px;
+			border-radius: 15px;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.account-table {
+			margin: auto;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.kopay-logo {
+			margin: auto;
+			width: 200px;
+		}
+
+		td {
+			padding-top: 10px;
+		}
+		.copy {
+			padding-bottom: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="kopay-logo">
+		<img src="http://www.wmu.mx/images/kopay.png" alt="logo" border="0" style="text-align:center;" />
+	</div>
+	<div class="main-container">
+		<h2>
+			Informacion de contacto:
+		</h2>
+		<table class="account-table">
+			<tbody>
+				{{#if contact.name}}
+				<tr>
+					<td>
+						<b>Nombre:</b>
+					</td>
+					<td>
+						{{contact.name}}
+					</td>
+				</tr>
+				{{/if}} {{#if contact.email}}
+				<tr>
+					<td>
+						<b>Correo:</b>
+					</td>
+					<td>
+						{{contact.email}}
+					</td>
+				</tr>
+				{{/if}} {{#if contact.phone}}
+				<tr>
+					<td>
+						<b>Telefono:</b>
+					</td>
+					<td>
+						{{contact.phone}}
+					</td>
+				</tr>
+				{{/if}} {{#if contact.city}}
+				<tr>
+					<td>
+						<b>Ciudad:</b>
+					</td>
+					<td>
+						{{contact.city}}
+					</td>
+				</tr>
+				{{/if}} {{#if contact.message}}
+				<tr>
+					<td>
+						<b>Mensaje:</b>
+					</td>
+					<td>
+						{{contact.message}}
+					</td>
+				</tr>
+				{{/if}}
+			</tbody>
+		</table>
+	</div>
+	<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" object="drag-module-small">
+		<tr>
+			<td class="copy" valign="top" align="center" style="font-family:'Lato', Arial, sans-serif; font-weight:400; font-size:11px; color:#000000; line-height:22px;">
+				&copy; 2017 Operadora de Franquicias Kopay S.A. de C.V.
+				<br/> Todos los derechos Reservados.
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

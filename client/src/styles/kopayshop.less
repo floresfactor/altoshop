@@ -1,0 +1,153 @@
+//Hides Conekta shity iframe
+body iframe[src*="conekta"]{
+    display: none;
+}
+#g-recaptcha iframe {
+  display: block;
+}
+#footer{
+    text-align: center;
+    padding: 0px;
+    background-color: #2B2B2B;
+    color: white;
+    .kopay-main-footer {
+        .container();
+        padding: 25px 15px 0px 15px;
+        box-sizing: border-box;
+        div[class*="ant-col"] {
+            margin-bottom: 25px;
+        }
+        a {
+            color: #A1A1A1;
+        }
+        .services, .privacy {
+            @media (min-width: 1200px) {
+                text-align: initial;
+            }
+            a {
+                display: block;
+            }
+        }
+        .brand {
+            .logo-footer{
+                img{
+                    width: 100%;
+                    max-height: 70px;
+                    max-width: 165px;
+                }
+            }
+            div {
+                color: white;
+                font-weight: bold;
+            }
+        }
+        .separator{
+            width: 1px;
+            height: 200px;
+            background-color: white;
+            margin: auto;
+        }
+        .follow {
+            .social {
+                margin: auto;
+                display: flex;
+                width: 100%;
+                max-width: 250px;
+                font-size: 2.5em;
+                a {
+                    margin: auto;
+                }
+            }
+            .ant-spin-nested-loading {
+                width: fit-content;
+                margin: auto;
+            }
+            .subscribe {
+                margin-top: 15px;
+                .mail-label {
+                  margin-bottom: 15px;
+                }
+                .register-loading{
+                    left: 0px;
+
+                }
+                input {
+                    border-color: #444;
+                    border-radius: unset;
+                }
+                .ant-input-group-addon{
+                    background-color: transparent;
+                    padding: 0 4px;
+                    border: unset;
+                    border-radius: unset;
+                    i {
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                    i:hover{
+                        color: @primary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        a:hover {
+            color: @primary-color;
+            text-decoration: underline;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
+    .kopay-rnviz-footer {
+        background-color: @primary-color;
+        padding: 5px 15px 5px 15px;
+        h6 {
+            color: white;
+            font-size: 12px;
+            margin: 0;
+            padding-top: 4px;
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+.not-found {
+    background-image: url(/public/img/404.jpg);
+    background-size: cover;
+    max-width: 1520px;
+    min-height: 61vh;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #444444;
+    @media (min-width: 992px) {
+        align-items: inherit !important;
+    }
+    i{
+        display: none;
+    }
+    .not-fnd-btn-back {
+        font-size: 12px;
+        background: #FF6900;
+        color: white;
+        padding: 11px 40px;
+    }
+    .not-fnd-btn-back:hover {
+        background: #444;
+    }
+    .title{
+        width: 66.66666%;
+        p:first-child{
+            font-size: 72px;
+            font-weight: 600;
+        }
+        p:nth-child(2){
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+}

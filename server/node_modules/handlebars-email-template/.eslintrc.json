@@ -1,0 +1,20 @@
+{
+	"parserOptions": {
+		"ecmaVersion":  6
+	},
+	"env": {
+		"node":    true
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		"no-console":   ["error", { "allow": ["warn", "error", "log"] }],
+		"eqeqeq":       "error",
+		"strict":       "error",
+		"camelcase":    "error",
+		"comma-dangle": ["error", "never"],
+		"func-names":   ["error", "always"],
+		"quotes":       ["error", "single"],
+		"quote-props":  ["error", "as-needed"],
+		"yoda":         "error"
+	}
+}

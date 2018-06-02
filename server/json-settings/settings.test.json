@@ -1,0 +1,153 @@
+{
+    "PROJECT_DIR": {
+        "public": false
+    },
+    "APP_PORT": {
+        "public": false,
+        "readonly": true
+    },
+    "SERVER_ADDRESS": {
+        "public": false
+    },
+    "MONGO_DB_AUTH": {
+        "public": false,
+        "readonly": true,
+        "value": false
+    },
+    "MONGO_DB_HOST": {
+        "public": false,
+        "readonly": true,
+        "value": "localhost"
+    },
+    "MONGO_DB_DB_NAME": {
+        "public": false,
+        "readonly": true,
+        "value": "KopayTest"
+    },
+    "FALLBACK_MONGO_DB_AUTH": {
+        "public": false,
+        "readonly": true,
+        "value": true
+    },
+    "FALLBACK_MONGO_DB_HOST": {
+        "public": false,
+        "readonly": true,
+        "value": "192.155.83.75"
+    },
+    "FALLBACK_MONGO_DB_PORT": {
+        "public": false,
+        "readonly": true,
+        "value": 27011
+    },
+    "FALLBACK_MONGO_DB_DB_NAME": {
+        "public": false,
+        "readonly": true,
+        "value": "KopayDev_Remote_Test"
+    },
+    "FALLBACK_MONGO_DB_DB_USER": {
+        "public": false,
+        "readonly": true,
+        "value": "dev_local_app"
+    },
+    "FALLBACK_MONGO_DB_DB_PASS": {
+        "public": false,
+        "readonly": true,
+        "value": "garig@l_local"
+    },
+    "ALLOWED_CORS_ORIGINS": {
+        "public": false
+    },
+    "STATICS_FOLDER": {
+        "value": "/public",
+        "public": true,
+        "readonly": true
+    },
+    "ADMIN_IMAGES_FOLDER_NAME": {
+        "value": "/img/user_admin",
+        "public": true,
+        "readonly": true
+    },
+    "SYS_IMAGES_FOLDER_NAME": {
+        "value": "/img/sys",
+        "public": true,
+        "readonly": true
+    },
+    "DATE_LOCALE": {
+        "value": "es-MX",
+        "values": [
+            "es-MX",
+            "en-US"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "DATETIME_FORMAT": {
+        "public": true
+    },
+    "LANGUAGE": {
+        "value": "es",
+        "values": [
+            "es",
+            "en"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "CONEKTA_API_KEY": {
+        "value": "key_uY1dAHChx1qsVpNrx9zysQ",
+        "public": true,
+        "readonly": false
+    },
+    "CURRENCY": {
+        "value": "MXN",
+        "values": [
+            "MXN"
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_HOST": {
+        "value": "smtp.gmail.com",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_PORT": {
+        "value": "465",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_SECURE": {
+        "value": true,
+        "values": [
+            true,
+            false
+        ],
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_AUTH_USER": {
+        "value": "soporte@kopay.com.mx",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_AUTH_PASS": {
+        "value": "BlackmirroR",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_TO": {
+        "value": "support@kopay.com.mx",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_SUBJECT": {
+        "value": "password reset default",
+        "public": true,
+        "readonly": false
+    },
+    "EMAIL_DEFAULT_TEXT": {
+        "value": "default message",
+        "public": true,
+        "readonly": false
+    }
+}
